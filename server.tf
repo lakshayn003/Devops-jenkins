@@ -13,12 +13,12 @@ region = "us-east-1"
 resource "aws_instance" "myawsserver" {
   ami = "ami-0b0dcb5067f052a63"
   instance_type = "t2.micro"
-  key_name = "raman-import"
+  key_name = "Lakshay-keypair-nvirginia"
 
   tags = {
-    Name = "Raman-DevOps-batch-server"
+    Name = "Lakshay-DevOps-batch-server"
     env = "Production"
-    owner = "Raman Khanna"
+    owner = "Lakshay"
   }
   provisioner "local-exec" {
     command = "echo The servers IP address is ${self.public_ip} && echo ${self.public_ip} > /tmp/inv"
