@@ -13,7 +13,7 @@ region = "us-east-1"
 resource "aws_instance" "myawsserver" {
   ami = "ami-0b0dcb5067f052a63"
   instance_type = "t2.micro"
-  key_name = "Lakshay-keypair-nvirginia"
+  key_name = "lakshay-rsa"
 
   tags = {
     Name = "Lakshay-DevOps-batch-server"
